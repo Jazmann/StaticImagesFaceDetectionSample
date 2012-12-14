@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0940EDAE167B852800CA303C /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940EDAB167B852800CA303C /* libc++.1.dylib */; };
+		0940EDAF167B852800CA303C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940EDAC167B852800CA303C /* libc++.dylib */; };
+		0940EDB0167B852800CA303C /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0940EDAD167B852800CA303C /* libc++abi.dylib */; };
 		097135C5162D5C10000AB1EA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 097135C4162D5C10000AB1EA /* Default-568h@2x.png */; };
 		097135C8162D5C2C000AB1EA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097135C7162D5C2C000AB1EA /* opencv2.framework */; };
 		B51963F4159CCDDB00D96FF2 /* FaceDetection.mm in Sources */ = {isa = PBXBuildFile; fileRef = B51963F3159CCDDB00D96FF2 /* FaceDetection.mm */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0940EDAB167B852800CA303C /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "usr/lib/libc++.1.dylib"; sourceTree = SDKROOT; };
+		0940EDAC167B852800CA303C /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		0940EDAD167B852800CA303C /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
 		097135C4162D5C10000AB1EA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		097135C7162D5C2C000AB1EA /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../openCV_Dev/ios/opencv2.framework; sourceTree = "<group>"; };
 		B51963F2159CCDDB00D96FF2 /* FaceDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetection.h; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0940EDAE167B852800CA303C /* libc++.1.dylib in Frameworks */,
+				0940EDAF167B852800CA303C /* libc++.dylib in Frameworks */,
+				0940EDB0167B852800CA303C /* libc++abi.dylib in Frameworks */,
 				097135C8162D5C2C000AB1EA /* opencv2.framework in Frameworks */,
 				B55AA2BE15825CB7000F65A4 /* UIKit.framework in Frameworks */,
 				B55AA2C015825CB7000F65A4 /* Foundation.framework in Frameworks */,
@@ -70,6 +79,9 @@
 		B55AA2AE15825CB7000F65A4 = {
 			isa = PBXGroup;
 			children = (
+				0940EDAB167B852800CA303C /* libc++.1.dylib */,
+				0940EDAC167B852800CA303C /* libc++.dylib */,
+				0940EDAD167B852800CA303C /* libc++abi.dylib */,
 				097135C7162D5C2C000AB1EA /* opencv2.framework */,
 				097135C4162D5C10000AB1EA /* Default-568h@2x.png */,
 				B55AA2C315825CB7000F65A4 /* FaceDetection */,
@@ -279,7 +291,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../ocv.build/ios\"",
 					"\"$(SRCROOT)/../../../openCV_Dev/ios\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -310,7 +321,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../ocv.build/ios\"",
 					"\"$(SRCROOT)/../../../openCV_Dev/ios\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
